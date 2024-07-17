@@ -1,0 +1,209 @@
+.groupsSection {
+  padding: 64px 0 300px;
+  text-align: center;
+}
+
+.groupsSectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: center;
+  color: #174891;
+  margin-top: 4px;
+}
+
+.groups {
+  display: flex;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.groupCard {
+  background: linear-gradient(98.04deg, rgba(79, 76, 223, 0.03) -6.1%, rgba(26, 167, 246, 0.03) 101.03%);
+  width: 49%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: left;
+  border: 1px solid #f3f3f3;
+  position: relative;
+  overflow: hidden;
+}
+
+.groupCardImageRight {
+  flex-direction: row-reverse;
+}
+
+.groupCardImageLeft {
+  flex-direction: row;
+}
+
+.image {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 16px;
+  max-height: 280px;
+}
+
+.cardContent {
+  padding: 50px 40px 30px;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.cardDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #383838;
+}
+
+.cardButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  border: unset;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 28px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardButton:hover {
+  opacity: 0.9;
+}
+
+.cardFade {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: linear-gradient(270deg, rgba(249, 251, 254, 0) 0%, #F9FBFE 87.97%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cardFadeRight {
+  right: 0;
+  border-radius: 0 16px 16px 0;
+}
+
+.cardFadeLeft {
+  left: 0;
+  background: linear-gradient(90deg, rgba(249, 251, 254, 0) 0%, #F9FBFE 87.97%);
+  border-radius: 16px 0 0 16px;
+}
+
+.expandedView {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 20px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #174891;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.groupDetail {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.groupDetail .image {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  max-height: none;
+}
+
+.cardDetailInfo {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #383838;
+}
+
+.intentionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.intentionDescription {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intentionText {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #383838;
+}
+
+.prayerList {
+  margin: 20px 0;
+}
+
+.prayerNames {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.prayerNames span {
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.additionalSettings {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.settingsLink {
+  color: #174891;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.settingsLink:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+.plainContent {
+}
+
+.plainContent__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-top: 3.75rem;
+}
+
+.plainContent__paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.plainContent__heading3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  padding-top: 1rem;
+}

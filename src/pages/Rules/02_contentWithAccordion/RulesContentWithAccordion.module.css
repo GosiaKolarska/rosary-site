@@ -1,0 +1,54 @@
+.accordion {
+}
+
+.accordion__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;    
+  margin-bottom: 2rem;
+  margin-top: 3.75rem;
+  color: #174891;
+}
+
+.accordion__item {
+  margin-bottom: 10px;
+}
+
+.accordion__button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  background-color: unset;
+  border-bottom: 1px solid #F3F3F3;
+  gap: 10px;
+  display: flex;
+  transition: .3s;
+}
+
+.accordion__content {
+  padding: 10px;
+}
+
+.accordion__paragraph {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;  
+  border: 1px solid #F3F3F3;
+  background: #F9FBFE;
+  padding: 30px 120px 30px 120px;
+  border-radius: 16px;
+  text-align: center;
+}
+  
+.chevronIcon {
+  margin-right: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.open .chevronIcon {
+  transform: rotate(90deg);
+}

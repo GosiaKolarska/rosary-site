@@ -1,0 +1,19 @@
+.justifyContent {
+  text-align: justify;
+}
+
+.justifyContent__heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-top: 3.75rem;
+}
+
+.justifyContent__paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+}
