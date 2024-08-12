@@ -105,6 +105,14 @@
   position: relative;
 }
 
+.dropdown.active {
+  width: 160px;
+  height: 130px;
+  border: 1px solid;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+
 .dropdownContent {
   visibility: hidden;
   opacity: 0;
@@ -116,7 +124,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 10;
@@ -147,8 +155,16 @@
 .dropdown:hover > a {
   /* border: 1px solid white;
   border-radius: 5px; */
+  border: unset;
+}
+.dropdown a:hover {
+  border: unset;
 }
 
 .dropdownContent li a:hover {
   border: none;
+}
+
+.dropdown:hover a .dropdownContent {
+  border: unset;
 }

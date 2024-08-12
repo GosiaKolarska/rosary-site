@@ -38,13 +38,13 @@ const Menu = () => {
               </Link>
               <ul className={styles.dropdownContent}>
                 <li>
-                  <Link to="/groups/husbands">Za mężów</Link>
+                  <Link to="/groups/husbands">Za cos1</Link>
                 </li>
                 <li>
-                  <Link to="/groups/children">Za dzieci</Link>
+                  <Link to="/groups/children">Za cos2</Link>
                 </li>
                 <li>
-                  <Link to="/groups/priests">Za kapłanów</Link>
+                  <Link to="/groups/priests">Za cos3</Link>
                 </li>
               </ul>
             </li>

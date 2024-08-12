@@ -19,25 +19,32 @@ const PanelProfil = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.panelProfilPage}>
       <Hero title="Profil" />
       <div className="container">
-        <div className={styles.section}>
-          <label className={styles.label}>Imię</label>
+        <div className={styles.panelProfilSection}>
+          <h2 className={styles.panelProfilSectionTitle}>Dane</h2>
+          <label className={styles.panelProfilLabel}>Imię</label>
           <input
             type="text"
             className={styles.input}
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <label className={styles.label}>E-mail</label>
+          <label className={styles.panelProfilLabel}>E-mail</label>
           <input
             type="email"
             className={styles.input}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label className={styles.label}>
+          <button className={styles.button} onClick={handleSaveChanges}>
+            Zapisz zmiany
+          </button>
+        </div>
+        <div className={styles.panelProfilSection}>
+          <h2 className={styles.panelProfilSectionTitle}>Adres</h2>
+          <label className={styles.panelProfilLabel}>
             Kraj zamieszkania (opcjonalnie)
           </label>
           <input
@@ -46,7 +53,7 @@ const PanelProfil = () => {
             value={country}
             onChange={(e) => setCountry(e.target.value)}
           />
-          <label className={styles.label}>
+          <label className={styles.panelProfilLabel}>
             Miasto zamieszkania (opcjonalnie)
           </label>
           <input
@@ -59,15 +66,16 @@ const PanelProfil = () => {
             Zapisz zmiany
           </button>
         </div>
-        <div className={styles.section}>
-          <label className={styles.label}>Hasło</label>
+        <div className={styles.panelProfilSection}>
+          <h2 className={styles.panelProfilSectionTitle}>Bezpieczeństwo</h2>
+          <label className={styles.panelProfilLabel}>Hasło</label>
           <input
             type="password"
             className={styles.input}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <label className={styles.label}>Powtórz hasło</label>
+          <label className={styles.panelProfilLabel}>Powtórz hasło</label>
           <input
             type="password"
             className={styles.input}
