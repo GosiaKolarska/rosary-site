@@ -36,7 +36,8 @@
     padding: 230px 0 240px;
     z-index:2;
   }
-  
+
+
   h1 {
     font-size: 56px;
     line-height: 67.77px;
@@ -49,7 +50,8 @@
     line-height: 24px;
     font-weight: 400;
     color: #fff;
-    margin-bottom: 42px;
+    max-width: 450px;
+    margin: 0;
   }
   
   .buttons {

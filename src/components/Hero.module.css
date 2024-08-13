@@ -31,7 +31,7 @@
   .content {
     max-width: 600px;
     margin: 0 auto;
-    padding: 230px 0 240px;
+    padding: 225px 0 240px;
     z-index: 2;
   }
 
@@ -52,17 +52,18 @@
     line-height: 24px;
     font-weight: 400;
     color: #fff;
-    margin-bottom: 42px;
+    margin: 0;
   }
   
   .buttons {
+    padding-top: 44px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 13px;
   }
   
   .primaryButton, .secondaryButton {
-    padding: 11px 22px;
+    padding: 11px 20px;
     font-size: 14px;
     line-height: 20px;
     border: none;
@@ -73,20 +74,22 @@
   .primaryButton {
     background-color: #fff;
     color: #174891;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0px 2px 8px 0px #00000014;
     border: 1px solid #fff;
+    letter-spacing: 0.1px;
   }
   
   .secondaryButton {
     background-color: transparent;
     color: white;
     border-radius: 5px;
+
   }
   
   .secondaryButton .arrow {
-    margin-left: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 14px;
+    padding-left: 4px;
   }
   
   .primaryButton:hover {

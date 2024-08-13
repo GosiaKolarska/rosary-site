@@ -5,7 +5,10 @@ const HomeHero = () => {
   return (
     <Hero
       title="Grupa różańcowa"
-      subtitle="Dołącz do modlitwy różańcowej. Poznaj szczegóły i przyłącz się do grupy."
+      subtitle={[
+        "Dołącz do modlitwy różańcowej.",
+        "Poznaj szczegóły i przyłącz się do grupy.",
+      ]}
       primaryButtonText="Przyłącz się"
       primaryButtonLink="#"
       secondaryButtonText="Dowiedz się więcej"

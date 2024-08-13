@@ -1,9 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Hero.module.css";
 
 const Hero = ({
   title,
-  subtitle,
+  subtitle, // Now expects an array of strings
   primaryButtonText,
   secondaryButtonText,
   primaryButtonLink,
@@ -22,7 +24,13 @@ const Hero = ({
       <div className={styles.overlay}></div>
       <div className={styles.content}>
         <h1>{title}</h1>
-        {subtitle && <p className={styles.heroSubtitle}>{subtitle}</p>}
+        {subtitle &&
+          Array.isArray(subtitle) &&
+          subtitle.map((text, index) => (
+            <p key={index} className={styles.heroSubtitle}>
+              {text}
+            </p>
+          ))}
         {(primaryButtonText || secondaryButtonText) && (
           <div className={styles.buttons}>
             {primaryButtonText && (
@@ -33,7 +41,7 @@ const Hero = ({
             {secondaryButtonText && (
               <a href={secondaryButtonLink} className={styles.secondaryButton}>
                 {secondaryButtonText}{" "}
-                <span className={styles.arrow}>&rarr;</span>
+                <FontAwesomeIcon icon={faArrowRight} className={styles.arrow} />
               </a>
             )}
           </div>

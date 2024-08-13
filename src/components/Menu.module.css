@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 880px;
+  max-width: 870px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -32,11 +32,15 @@
 .logoMenuWrapper {
   display: flex;
   align-items: center;
+  gap: 41px;
+}
+
+.logoMenuWrapper a {
+  display: flex;
 }
 
 .logo {
   height: 50px;
-  margin-right: 2rem;
 }
 
 .navLinks {
@@ -52,7 +56,7 @@
 
 .navLinks a {
   color: white;
-  padding: 12px 19px;
+  padding: 12px 14px;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -61,6 +65,8 @@
   border: 1px solid transparent;
   border-radius: 5px;
   transition: .2s;
+  display: flex;
+  align-items: center;
 }
 
 .navLinks a:hover {
@@ -76,9 +82,10 @@
 .joinButton {
   background-color: white;
   border: 1px solid #FFFFFF80;
-  border-radius: 5px;
-  padding: 12px 20px;
-  font-size: 1rem;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-size: 14px;
+  line-height: 20px;
   cursor: pointer;
   transition: .4s;
   text-decoration: none;
@@ -94,7 +101,8 @@
 .loginLink {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .loginLink:hover {
@@ -141,6 +149,7 @@
 .dropdownLinkIcon {
   vertical-align: middle;
   margin-left: 6px;
+  font-size: 13px;
 }
 
 .dropdownContent li a:hover {

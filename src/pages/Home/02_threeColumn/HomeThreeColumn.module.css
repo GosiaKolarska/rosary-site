@@ -1,10 +1,15 @@
 .threeColSection {
-  padding: 98px 0 70px;
+  padding: 98px 0 61px;
+}
+
+.threeColSection > div {
+
 }
 
 .threeCol {
   display: flex;
   justify-content: space-between;
+  max-width: 846px;
 }
 
 .column {
