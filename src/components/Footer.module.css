@@ -1,6 +1,6 @@
 .footer {
   background-color: #f9f9f9;
-  padding: 3rem 0 15px;
+  padding: 43px 0 15px;
   text-align: left;
 }
 
@@ -30,6 +30,7 @@
   line-height: 24px;
   text-align: left;
   color: #383838;
+  margin-bottom: 15px;
 }
 
 .footer__subtitle {

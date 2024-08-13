@@ -46,7 +46,9 @@ const HomeFAQ = () => {
                 >
                   <i
                     className={`fas ${
-                      openIndex === index ? "fa-chevron-up" : "fa-chevron-down"
+                      openIndex === index
+                        ? "fa-chevron-down"
+                        : "fa-chevron-right"
                     } ${styles.icon}`}
                   ></i>
                   {faq.question}
