@@ -1,0 +1,55 @@
+.confirmation > div {
+    text-align: center;
+}
+
+.confirmationContent {
+    margin: 140px auto 50px;
+    display: flex;
+    gap: 37px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+    border-radius: 9px;
+    padding: 18px 44px 5px;
+    max-width: 510px;
+}
+
+.confirmationText {
+    max-width: 470px;
+}
+
+.confirmationTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: #383838;
+}
+
+.confirmationDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    color: #383838;
+}
+
+.confirmationIcon {
+    font-size: 20px;
+}
+
+.confirmationButton {
+    background-color: #2A5DAB;
+    padding: 12px 20px 12px 20px;
+    gap: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    outline: unset;
+    border: unset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
