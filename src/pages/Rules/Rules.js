@@ -9,7 +9,7 @@ import styles from "./Rules.module.css";
 const Rules = () => {
   return (
     <div>
-      <Hero title="Zasady" />
+      <Hero />
       <RulesTextWithSidebar />
       <RulesContentWithAccordion />
       <RulesTextInstructions />

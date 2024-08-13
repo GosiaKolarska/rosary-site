@@ -5,7 +5,7 @@ import styles from "./Hero.module.css";
 
 const Hero = ({
   title,
-  subtitle, // Now expects an array of strings
+  subtitle,
   primaryButtonText,
   secondaryButtonText,
   primaryButtonLink,
@@ -23,7 +23,7 @@ const Hero = ({
       </video>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
-        <h1>{title}</h1>
+        {title && <h1 className={styles.heroH1}>{title}</h1>}
         {subtitle &&
           Array.isArray(subtitle) &&
           subtitle.map((text, index) => (

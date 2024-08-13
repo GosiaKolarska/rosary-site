@@ -4,6 +4,7 @@ import styles from "./RulesTextWithSidebar.module.css";
 const RulesTextWithSidebar = () => {
   return (
     <div className={`container ${styles.textWithSidebar}`}>
+      <h1 className={styles.textWithSidebar__heading}>Zasady</h1>
       <h2 className={styles.textWithSidebar__subheading}>Ogólne</h2>
       <div className={styles.textWithSidebar__wrapperInner}>
         <div className={styles.textWithSidebar__content}>

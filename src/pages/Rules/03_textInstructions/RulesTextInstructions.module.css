@@ -23,3 +23,11 @@
   text-align: left;
   padding-top: 1rem;
 }
+
+.plainContent__list {
+    padding-left: 28px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

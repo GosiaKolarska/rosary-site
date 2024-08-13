@@ -1,14 +1,15 @@
 .textWithSidebar {
-
+  padding-top: 32px;
 }
 
 .textWithSidebar__sidebar {
   border-radius: 8px;
   max-width: 320px;
   width: 100%;
-  gap: 10px;
+  gap: 12px;
   display: flex;
   flex-direction: column;
+  padding-top: 14px;
 }
 
 .textWithSidebar__title {
@@ -24,14 +25,14 @@
 
 .textWithSidebar__wrapperInner {
   display: flex;
-  gap: 30px;
+  gap: 34px;
 }
 
 .textWithSidebar__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 26px 40px;
+  padding: 20px 40px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #F3F3F3;
@@ -70,8 +71,8 @@
   line-height: 29.05px;
   text-align: left;
   color: #174891;
-  margin-bottom: 2rem;
-  margin-top: 3.75rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3.25rem;
 }
 
 .textWithSidebar__paragraph {
@@ -80,4 +81,12 @@
   line-height: 24px;
   text-align: justify;
   color: #383838;
+}
+
+.textWithSidebar__heading {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43.57px;
+  text-align: center;
+  color: #174891;
 }

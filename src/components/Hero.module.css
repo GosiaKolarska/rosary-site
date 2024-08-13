@@ -36,15 +36,16 @@
   }
 
   .onlyTitle .content {
-    padding: 120px 0 20px;
+    padding: 94px 0 20px;
   }
   
   
-  h1 {
+.heroH1 {
     font-size: 56px;
     line-height: 67.77px;
     margin-bottom: 40px;
     font-weight: 700;
+    padding-top: 26px;
   }
   
   .heroSubtitle {

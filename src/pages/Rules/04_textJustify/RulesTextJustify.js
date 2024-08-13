@@ -3,7 +3,7 @@ import styles from "./RulesTextJustify.module.css";
 
 const RulesTextJustify = () => {
   return (
-    <div className={`container ${styles.justifyContent}`}>
+    <div className={`container ${styles.RulesTextJustify}`}>
       <h2 className={styles.justifyContent__heading}>Uczestnictwo</h2>
       <p>
         W celu uczestnictwa w modlitwie, niezbędna i konieczna jest rejestracja.

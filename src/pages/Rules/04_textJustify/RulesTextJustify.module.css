@@ -1,5 +1,6 @@
-.justifyContent {
+.RulesTextJustify {
   text-align: justify;
+  padding-bottom: 46px;
 }
 
 .justifyContent__heading {

@@ -13,12 +13,12 @@ const RulesTextInstructions = () => {
         logowania.
       </p>
       <h3 className={styles.plainContent__heading3}>Adres email</h3>
-      <p className={styles.plainContent__paragraph}>
+      <p className={`mb-3 ${styles.plainContent__paragraph}`}>
         Adres, który służy jako identyfikator do logowania. Jest to główny kanał
         komunikacji między administratorem a uczestnikiem. Na ten adres będą
         wysyłane następujące treści:
       </p>
-      <ul>
+      <ul className={styles.plainContent__list}>
         <li>Kod aktywacyjny podczas rejestracji.</li>
         <li>Przypomnienia o potwierdzeniu uczestnictwa.</li>
         <li>Widomości, konieczne do rozwiązywania problemów z kontem.</li>
