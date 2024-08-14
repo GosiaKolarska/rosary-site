@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Hero from "../../../components/Hero";
+import GroupsSection from "./GroupsSection";
 import styles from "./PanelHome.module.css";
 
 const groupsData = [
@@ -44,13 +45,8 @@ const PanelHome = () => {
     setRemainingGroups(groupsData.filter((g) => g !== group));
   };
 
-  const handleBackClick = () => {
-    setSelectedGroup(null);
-    setRemainingGroups(groupsData);
-  };
-
   return (
-    <div>
+    <div className={styles.panelHome}>
       <Hero title="Panel użytkownika" />
       <div className="container">
         {selectedGroup ? (
@@ -74,7 +70,7 @@ const PanelHome = () => {
                 className={styles.cardButton}
                 style={{ backgroundColor: selectedGroup.color }}
               >
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                <FontAwesomeIcon icon={faPlus} />
                 Potwierdź uczestnictwo
               </button>
               <p className={styles.cardDetailInfo}>
@@ -107,75 +103,16 @@ const PanelHome = () => {
                 </a>
               </div>
             </div>
-            <div className={styles.groupsSection} style={{ maxWidth: "300px" }}>
-              {remainingGroups.map((group) => (
-                <div
-                  key={group.title}
-                  className={styles.groupCard}
-                  style={{ width: "100%" }}
-                >
-                  <img
-                    src={group.imgSrc}
-                    alt={group.alt}
-                    className={styles.image}
-                  />
-                  <div className={styles.cardContent}>
-                    <h3
-                      className={styles.cardTitle}
-                      style={{ color: group.color }}
-                    >
-                      {group.title}
-                    </h3>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <GroupsSection
+              groups={remainingGroups}
+              onJoinClick={handleJoinClick}
+            />
           </div>
         ) : (
-          <div className={styles.groupsSection}>
-            <h2 className={styles.groupsSectionTitle}>Dostępne grupy</h2>
-            <div className={styles.groups}>
-              {groupsData.map((group, index) => (
-                <div
-                  key={group.id}
-                  className={`${styles.groupCard} ${
-                    index % 2 === 0
-                      ? styles.groupCardImageRight
-                      : styles.groupCardImageLeft
-                  }`}
-                >
-                  <img
-                    src={group.imgSrc}
-                    alt={group.alt}
-                    className={styles.image}
-                  />
-                  <div className={styles.cardContent}>
-                    <h3
-                      className={styles.cardTitle}
-                      style={{ color: group.color }}
-                    >
-                      {group.title}
-                    </h3>
-                    <button
-                      className={styles.cardButton}
-                      style={{ backgroundColor: group.color }}
-                      onClick={() => handleJoinClick(group)}
-                    >
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                      {group.buttonText}
-                    </button>
-                  </div>
-                  <div
-                    className={`${styles.cardFade} ${
-                      index % 2 === 0
-                        ? styles.cardFadeRight
-                        : styles.cardFadeLeft
-                    }`}
-                  ></div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <GroupsSection
+            groups={remainingGroups}
+            onJoinClick={handleJoinClick}
+          />
         )}
       </div>
     </div>

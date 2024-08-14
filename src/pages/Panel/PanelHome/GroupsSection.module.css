@@ -1,0 +1,119 @@
+
+.groupsSection {
+    padding: 56px 0 300px;
+    text-align: center;
+  }
+  
+  .groupsSectionTitle {
+    color: #383838;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  .groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 12px;
+  }
+  
+  .groupCard {
+    background: linear-gradient(98.04deg, rgba(79, 76, 223, 0.03) -6.1%, rgba(26, 167, 246, 0.03) 101.03%);
+    max-width: 350px;
+    min-height: 130px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    border: 1px solid #f3f3f3;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .groupCardImageRight {
+    flex-direction: row-reverse;
+  }
+  
+  .groupCardImageLeft {
+    flex-direction: row;
+  }
+  
+  .image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 16px;
+    max-height: 280px;
+  }
+  
+  .cardContent {
+    padding: 8px 30px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  .cardDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #383838;
+  }
+  
+  .cardButton {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px 21px 10px 12px;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    border: unset;
+    color: #4CB71A;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4CB71A;
+    background-color: #fff;
+  }
+  
+  .cardButton:hover {
+    background: #4CB71A;
+    color: #fff;
+  }
+  
+  .cardFade {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: linear-gradient(270deg, rgba(249, 251, 254, 0) 0%, #F9FBFE 87.97%);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .cardFadeRight {
+    right: 0;
+    border-radius: 0 16px 16px 0;
+  }
+  
+  .cardFadeLeft {
+    left: 0;
+    background: linear-gradient(90deg, rgba(249, 251, 254, 0) 0%, #F9FBFE 87.97%);
+    border-radius: 16px 0 0 16px;
+  }
