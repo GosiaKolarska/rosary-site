@@ -1,11 +1,11 @@
 .panelProfilPage > div {
-  padding: 30px 0;
+  padding: 30px 0 200px;
 }
 
 .panelProfilSection {
   max-width: 300px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 0 5px;
 }
 
 .panelProfilSectionTitle {
@@ -37,10 +37,16 @@
   
   .input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px 15px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #778799;
+    color: #778799;
+    background-color: #F9FAFE;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
   }
   
   .button {
@@ -48,11 +54,13 @@
     font-weight: 600;
     line-height: 20px;
     text-align: center;
-    background-color: blue;
+    background-color: #2A5DAB;
     color: #fff;
     outline: unset;
     border: unset;
     padding: 9px 9px;
+    border-radius: 8px;
+    padding: 12px 20px 12px 20px;
   }
   
   .button:hover {
