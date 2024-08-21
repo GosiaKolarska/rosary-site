@@ -18,7 +18,7 @@ const Hero = ({
       className={`${styles.hero} ${isOnlyTitle ? styles.onlyTitle : ""}`}
     >
       <video className={styles.videoBackground} autoPlay muted loop>
-        <source src="/herovideo.mp4" type="video/mp4" />
+        <source src="/herovideo2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className={styles.overlay}></div>
