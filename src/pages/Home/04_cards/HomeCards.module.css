@@ -59,9 +59,13 @@
 }
 
 .cardItemContent {
-  padding: 51px 43px 30px;
+  padding: 51px 34px 30px 44px;
   width: 50%;
   position: relative;
+}
+
+.card:nth-child(even) .cardItemContent {
+  padding: 51px 44px 30px 0px;
 }
 
 .cardItemTitle {

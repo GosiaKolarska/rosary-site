@@ -15,15 +15,15 @@ const Hero = ({
 
   return (
     <section
-      className={`${styles.hero} ${isOnlyTitle ? styles.onlyTitle : ""}`}
+      className={`${styles.hero} ${isOnlyTitle ? styles.heroOnlyTitle : ""}`}
     >
-      <video className={styles.videoBackground} autoPlay muted loop>
+      <video className={styles.heroVideoBackground} autoPlay muted loop>
         <source src="/herovideo2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className={styles.overlay}></div>
-      <div className={styles.content}>
-        {title && <h1 className={styles.heroH1}>{title}</h1>}
+      <div className={styles.heroOverlay}></div>
+      <div className={styles.heroContent}>
+        {title && <h1 className={styles.heroTitle}>{title}</h1>}
         {subtitle &&
           Array.isArray(subtitle) &&
           subtitle.map((text, index) => (
@@ -32,16 +32,22 @@ const Hero = ({
             </p>
           ))}
         {(primaryButtonText || secondaryButtonText) && (
-          <div className={styles.buttons}>
+          <div className={styles.heroButtons}>
             {primaryButtonText && (
-              <a href={primaryButtonLink} className={styles.primaryButton}>
+              <a href={primaryButtonLink} className={styles.heroPrimaryButton}>
                 {primaryButtonText}
               </a>
             )}
             {secondaryButtonText && (
-              <a href={secondaryButtonLink} className={styles.secondaryButton}>
+              <a
+                href={secondaryButtonLink}
+                className={styles.heroSecondaryButton}
+              >
                 {secondaryButtonText}{" "}
-                <FontAwesomeIcon icon={faArrowRight} className={styles.arrow} />
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  className={styles.heroArrow}
+                />
               </a>
             )}
           </div>
