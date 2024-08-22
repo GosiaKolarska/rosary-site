@@ -2,8 +2,11 @@
 .groupsSection {
     padding: 56px 0 300px;
     text-align: center;
+    max-width: 715px;
+    margin: 0 auto;
   }
-  
+
+
   .groupsSectionTitle {
     color: #383838;
     margin-top: 4px;
@@ -16,14 +19,13 @@
   .groups {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     gap: 12px;
   }
   
   .groupCard {
     background: linear-gradient(98.04deg, rgba(79, 76, 223, 0.03) -6.1%, rgba(26, 167, 246, 0.03) 101.03%);
     max-width: 350px;
-    min-height: 130px;
+    width: 100%;
     border-radius: 16px;
     display: flex;
     flex-direction: row-reverse;
@@ -43,11 +45,24 @@
   }
   
   .image {
-    width: 50%;
+    width: 60%;
     object-fit: cover;
     border-radius: 16px;
-    max-height: 280px;
+    max-height: 130px;
   }
+
+  .groupCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    background: linear-gradient(270deg, rgba(249, 251, 254, 0) 0%, #F9FBFE 95.97%);
+    border-radius: 0 16px 16px 0;
+    z-index: 1;
+    pointer-events: none;
+}
   
   .cardContent {
     padding: 8px 30px;
@@ -102,7 +117,7 @@
     top: 0;
     bottom: 0;
     width: 50%;
-    background: linear-gradient(270deg, rgba(249, 251, 254, 0) 0%, #F9FBFE 87.97%);
+    background: linear-gradient(270deg, rgba(249, 251, 254, 0) 0%, rgba(249, 251, 254, 0.9) 87.97%);
     z-index: 1;
     pointer-events: none;
   }

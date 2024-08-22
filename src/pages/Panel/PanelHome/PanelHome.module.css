@@ -6,8 +6,7 @@
 .expandedView {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
-  padding: 20px;
+  align-items: flex-start;
 }
 
 .backButton {
@@ -24,7 +23,6 @@
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   width: 100%;
   max-width: 600px;
 }
@@ -36,47 +34,84 @@
 }
 
 .cardDetailInfo {
-  margin: 20px 0;
-  font-size: 14px;
   color: #383838;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+
+.intentionSection {
+  padding-top: 40px;
+  text-align: center;
+  max-width: 484px;
+  margin: 0 auto;
 }
 
 .intentionTitle {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
-  margin: 20px 0;
+  line-height: 20px;
   text-align: center;
+  color: #383838;
+  border-radius: 4px;
+  background-color: #E7E7E7;
+  display: inline-block;
+  padding: 1px 4px;
 }
 
 .intentionDescription {
-  font-size: 16px;
-  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
   text-align: center;
-  margin-bottom: 10px;
+  color: #383838;
+  margin-top: 14px;
 }
 
 .intentionText {
-  font-size: 14px;
-  line-height: 1.5;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   text-align: center;
   color: #383838;
 }
 
 .prayerList {
-  margin: 20px 0;
+
+}
+
+.prayerListTitle {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #383838;
+  margin-bottom: 7px;
+  margin-top: 35px;
 }
 
 .prayerNames {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  gap: 6px;
 }
 
 .prayerNames span {
-  background: #f3f3f3;
-  border-radius: 8px;
-  padding: 5px 10px;
+  background: #E4E4E4;
+  border-radius: 4px;
+  padding: 2px 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #767676;
+
 }
 
 .additionalSettings {
@@ -94,4 +129,56 @@
 
 .settingsLink:hover {
   text-decoration: underline;
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #383838;
+  margin-bottom: 12px;
+}
+
+.cardDetailConfirmationNumberCounter {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #4CB71A;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #4CB71A;
+  padding: 2px 2px 1px 7px;
+  border-radius: 4px;
+  max-width: 82px;
+}
+
+.cardDetailConfirmationNumberCounter svg{
+  font-size: 11px;
+}
+
+.cardDetailConfirmationNumberTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #383838;
+  padding-top: 2px;
+}
+
+.cardButton {
+  background-color: #4CB71A;
+  border: unset;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px 12px 13px;
 }
