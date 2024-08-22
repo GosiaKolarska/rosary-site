@@ -2,11 +2,12 @@
   max-width: 896px;
 }
 
-
 .expandedView {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
+  gap: 22px;
+  padding: 36px 0 64px;
 }
 
 .backButton {
@@ -19,13 +20,33 @@
   margin-bottom: 20px;
 }
 
-.groupDetail {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 600px;
+.expandedViewGroupDetail {
+  width: 600px;
 }
+
+.expandedViewGroupDetailTitle {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #383838;
+  padding-left: 10px;
+  margin-bottom: 3px;
+}
+
+.groupDetail {
+  background-color: #FAFCFF;
+  border-radius: 16px;
+  background-image: url(../../../../public/profile-group-husband.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px;
+}
+
+.groupDetailImageWrapper {
+
+}
+
 
 .groupDetail .image {
   width: 100%;
@@ -41,6 +62,59 @@
   text-align: left;
   margin-bottom: 20px;
   margin-top: 3px;
+}
+
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #383838;
+  margin-bottom: 12px;
+  margin-top: 2px;
+}
+
+.cardDetailConfirmationNumberCounter {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #4CB71A;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #4CB71A;
+  padding: 2px 2px 1px 7px;
+  border-radius: 4px;
+  max-width: 82px;
+}
+
+.cardDetailConfirmationNumberCounter svg{
+  font-size: 11px;
+}
+
+.cardDetailConfirmationNumberTitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #383838;
+}
+
+.cardButton {
+  background-color: #4CB71A;
+  border: unset;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px 12px 13px;
 }
 
 .intentionSection {
@@ -98,7 +172,7 @@
 .prayerNames {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5.5px;
 }
 
 .prayerNames span {
@@ -115,70 +189,36 @@
 }
 
 .additionalSettings {
-  margin-top: 20px;
+  margin-top: 27px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-direction: column;
 }
 
 .settingsLink {
-  color: #174891;
+  color: #2A5DAB;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  display: flex;
+  gap: 6px;
+  padding: 11px 0;
+  border-top: 1px solid #E1E1E1;
 }
 
 .settingsLink:hover {
   text-decoration: underline;
 }
 
-.cardTitle {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 20px;
-  text-align: left;
-  color: #383838;
-  margin-bottom: 12px;
+.collapsibleContent {
+  display: none;
+  padding: 10px 0;
+  border-top: 1px solid #E1E1E1;
 }
 
-.cardDetailConfirmationNumberCounter {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  text-align: left;
-  color: #4CB71A;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  border: 1px solid #4CB71A;
-  padding: 2px 2px 1px 7px;
-  border-radius: 4px;
-  max-width: 82px;
+.collapsibleContent.active {
+  display: block;
 }
 
-.cardDetailConfirmationNumberCounter svg{
-  font-size: 11px;
-}
-
-.cardDetailConfirmationNumberTitle {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  text-align: left;
-  color: #383838;
-  padding-top: 2px;
-}
-
-.cardButton {
-  background-color: #4CB71A;
-  border: unset;
-  color: #fff;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 25px 12px 13px;
-}
