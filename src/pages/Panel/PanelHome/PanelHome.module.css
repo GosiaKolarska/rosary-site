@@ -195,7 +195,7 @@
   flex-direction: column;
 }
 
-.settingsLink {
+.settingsAccordionTitle {
   color: #2A5DAB;
   text-decoration: none;
   font-size: 12px;
@@ -206,19 +206,101 @@
   gap: 6px;
   padding: 11px 0;
   border-top: 1px solid #E1E1E1;
+  margin: 0;
 }
 
 .settingsLink:hover {
   text-decoration: underline;
 }
 
-.collapsibleContent {
-  display: none;
-  padding: 10px 0;
-  border-top: 1px solid #E1E1E1;
+.settingsAccordionItem {
+
 }
 
-.collapsibleContent.active {
-  display: block;
+.settingsAccordionForm {
+  display: flex;
+  gap: 12px;
 }
 
+.settingsAccordionInput {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #778799;
+  border-radius: 8px;
+  border:1px solid #778799;
+  padding: 10px;
+}
+
+.settingsAccordionButton {
+  background-color: #2A5DAB;
+  border: unset;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.settingsAccordionLink {
+  color: #DC3545;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.settingsToggleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.toggleSwitch {
+  width: 40px;
+  height: 24px;
+  background-color: #2D5CC6;
+  border-radius: 17px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.toggleThumb {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+.toggled {
+  transform: translateX(16px);
+  background-color: #FFFFFF;
+}
+
+
+
+.settingsToggleLabel {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+
+.settingsAccordionFormLabel {
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+}
