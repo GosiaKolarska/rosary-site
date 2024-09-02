@@ -177,3 +177,20 @@
 .dropdown:hover a .dropdownContent {
   border: unset;
 }
+
+.secondaryButton {
+  color: #fff;
+}
+
+.primaryButton {
+  background-color: white;
+  border: 1px solid #FFFFFF80;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: .4s;
+  text-decoration: none;
+  color: #174891;
+}

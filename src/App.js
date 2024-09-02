@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Layout from "./components/Layout";
@@ -12,17 +12,28 @@ import PanelProfil from "./pages/Panel/PanelProfil/PanelProfil";
 import Confirmation from "./pages/Confirmation/Confirmation";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <BrowserRouter>
-      <Layout>
+      <Layout isLoggedIn={isLoggedIn}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rules" element={<Rules />} />
-          <Route path="/login" element={<Login />} />
+          <Route
+            path="/login"
+            element={<Login setIsLoggedIn={setIsLoggedIn} />}
+          />
           <Route path="/register" element={<Register />} />
           <Route path="/groups" element={<Groups />} />
-          <Route path="/panel" element={<PanelHome />} />
-          <Route path="/panel/profil" element={<PanelProfil />} />
+          <Route
+            path="/panel"
+            element={isLoggedIn ? <PanelHome /> : <Home />}
+          />
+          <Route
+            path="/panel/profil"
+            element={isLoggedIn ? <PanelProfil /> : <Home />}
+          />
           <Route path="/confirmation" element={<Confirmation />} />
         </Routes>
       </Layout>

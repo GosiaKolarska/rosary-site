@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Menu.module.css";
 
-const Menu = () => {
+const Menu = ({ isLoggedIn }) => {
   const [menuData, setMenuData] = useState(null);
   const location = useLocation();
   const isRulesPage = location.pathname === "/rules";
@@ -62,11 +62,28 @@ const Menu = () => {
           </ul>
         </div>
         <div className={styles.authButtons}>
-          {menuData.menu.authButtons.map((button, index) => (
-            <Link key={index} to={button.link} className={styles[button.class]}>
-              {button.label}
-            </Link>
-          ))}
+          {isLoggedIn ? (
+            <>
+              <Link to="/panel" className={styles.primaryButton}>
+                Panel użytkownika
+              </Link>
+              <Link to="/logout" className={styles.secondaryButton}>
+                Wyloguj się
+              </Link>
+            </>
+          ) : (
+            <>
+              {menuData.menu.authButtons.map((button, index) => (
+                <Link
+                  key={index}
+                  to={button.link}
+                  className={styles[button.class]}
+                >
+                  {button.label}
+                </Link>
+              ))}
+            </>
+          )}
         </div>
       </div>
     </nav>
