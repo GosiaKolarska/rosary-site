@@ -33,12 +33,14 @@
     font-size: 24px;
     color: #d9534f;
     margin-bottom: 20px;
+    width: 300px;
   }
   
   .tajemnica ol {
     list-style: none;
     padding: 0;
     color: #333;
+    width: 600px;
   }
   
   .tajemnica li {
