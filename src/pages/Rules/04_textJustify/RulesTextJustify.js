@@ -5,7 +5,7 @@ const RulesTextJustify = () => {
   const [content, setContent] = useState(null);
 
   useEffect(() => {
-    fetch("/src/data/rules.json")
+    fetch("/data/rules.json")
       .then((response) => response.json())
       .then((data) => setContent(data.justifications))
       .catch((error) => console.error("Error loading content:", error));
