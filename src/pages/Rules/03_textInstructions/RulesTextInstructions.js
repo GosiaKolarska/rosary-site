@@ -1,34 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./RulesTextInstructions.module.css";
 
 const RulesTextInstructions = () => {
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/rules.json")
+      .then((response) => response.json())
+      .then((data) => setContent(data.instructions))
+      .catch((error) => console.error("Error loading content:", error));
+  }, []);
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className={`container ${styles.plainContent}`}>
-      <h2 className={styles.plainContent__heading}>Rejestracja</h2>
-      <p className={styles.plainContent__paragraph}>
-        Uczestnictwo w modlitwie jest dobrowolne i na czas nieokreślony. Może
-        się zdarzyć, że ktoś odejdzie z róży. Dlatego, w celu zapewnienia
-        należytej staranności modlitwy, uczestnictwo wymaga rejestracji. Podczas
-        rejestracji konieczne jest podanie adresu e-mail i stworzenie hasła do
-        logowania.
-      </p>
-      <h3 className={styles.plainContent__heading3}>Adres email</h3>
+      <h2 className={styles.plainContent__heading}>{content.heading}</h2>
+      {content.paragraphs.map((paragraph, index) => (
+        <p key={index} className={styles.plainContent__paragraph}>
+          {paragraph}
+        </p>
+      ))}
+      <h3 className={styles.plainContent__heading3}>
+        {content.subheadings.email}
+      </h3>
       <p className={`mb-3 ${styles.plainContent__paragraph}`}>
-        Adres, który służy jako identyfikator do logowania. Jest to główny kanał
-        komunikacji między administratorem a uczestnikiem. Na ten adres będą
-        wysyłane następujące treści:
+        {content.paragraphs[1]}
       </p>
       <ul className={styles.plainContent__list}>
-        <li>Kod aktywacyjny podczas rejestracji.</li>
-        <li>Przypomnienia o potwierdzeniu uczestnictwa.</li>
-        <li>Widomości, konieczne do rozwiązywania problemów z kontem.</li>
+        {content.listItems.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
-      <h3 className={styles.plainContent__heading3}>Hasło</h3>
+      <h3 className={styles.plainContent__heading3}>
+        {content.subheadings.password}
+      </h3>
       <p>
-        Ciąg znaków, który będzie używany w celu logowania do panelu uczestnika.
-        Zapoznaj się z rekomendacjami dotyczącymi tworzenia haseł zawartymi na
-        tej stronie
-        https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla
+        {content.passwordParagraph}
+        <a href="https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla">
+          https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla
+        </a>
       </p>
     </div>
   );

@@ -1,48 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import styles from "./HomeCards.module.css";
 
-const cardsData = [
-  {
-    title: "Różaniec za żonę",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
-    imgSrc: "/group-wife.png",
-    buttonText: "Sprawdź sekcję",
-    alt: "Praying man",
-    color: "#F48B2A",
-  },
-  {
-    title: "Różaniec za męża",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
-    imgSrc: "/group-husband.png",
-    buttonText: "Sprawdź sekcję",
-    alt: "Praying women",
-    color: "#C642DB",
-  },
-  {
-    title: "Różaniec za dzieci",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
-    imgSrc: "/group-kids.png",
-    buttonText: "Sprawdź sekcję",
-    alt: "Praying kids",
-    color: "#70CA61",
-  },
-  {
-    title: "Różaniec za kapłana",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
-    imgSrc: "/group-priest.png",
-    buttonText: "Sprawdź sekcję",
-    alt: "Praying priest",
-    color: "#832AF4",
-  },
-];
-
 const HomeCards = () => {
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/home.json")
+      .then((response) => response.json())
+      .then((data) => setContent(data.cards))
+      .catch((error) => console.error("Error loading content:", error));
+  }, []);
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <section className={styles.cardsSectionSection}>
       <div className="container">
@@ -52,7 +26,7 @@ const HomeCards = () => {
             Sprawdź dostępne grupy różańcowe
           </h2>
           <div className={styles.cards}>
-            {cardsData.map((card, index) => (
+            {content.map((card, index) => (
               <div
                 key={index}
                 className={`${styles.card} ${

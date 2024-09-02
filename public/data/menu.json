@@ -1,0 +1,48 @@
+{
+    "menu": {
+        "logo": {
+            "src": "/logo.png",
+            "alt": "Logo"
+        },
+        "navLinks": [
+            {
+                "label": "Strona główna",
+                "link": "/"
+            },
+            {
+                "label": "Zasady",
+                "link": "/rules"
+            },
+            {
+                "label": "Grupy",
+                "link": "/groups",
+                "dropdown": [
+                    {
+                        "label": "Za mężów",
+                        "link": "/groups/husbands"
+                    },
+                    {
+                        "label": "Za żony",
+                        "link": "/groups/children"
+                    },
+                    {
+                        "label": "Za kapłanów",
+                        "link": "/groups/priests"
+                    }
+                ]
+            }
+        ],
+        "authButtons": [
+            {
+                "label": "Przyłącz się",
+                "link": "/register",
+                "class": "joinButton"
+            },
+            {
+                "label": "Zaloguj się",
+                "link": "/login",
+                "class": "loginLink"
+            }
+        ]
+    }
+}

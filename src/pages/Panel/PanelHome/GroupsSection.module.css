@@ -2,7 +2,7 @@
 .groupsSection {
     /* padding: 56px 0 300px; */
     text-align: center;
-    max-width: 715px;
+    /* max-width: 715px; */
     margin: 0 auto;
   }
 
@@ -22,7 +22,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
-    flex-direction: column;
   }
   
   .groupCard {

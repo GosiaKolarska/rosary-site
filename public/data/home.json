@@ -1,0 +1,131 @@
+{
+    "hero": {
+        "title": "Grupa różańcowa",
+        "subtitle": [
+            "Dołącz do modlitwy różańcowej.",
+            "Poznaj szczegóły i przyłącz się do grupy."
+        ],
+        "primaryButtonText": "Przyłącz się",
+        "primaryButtonLink": "#",
+        "secondaryButtonText": "Dowiedz się więcej",
+        "secondaryButtonLink": "#"
+    },
+    "threeColumn": {
+        "columns": [
+            {
+                "icon": "fas fa-hand-holding-heart",
+                "title": "Duchowe wsparcie",
+                "description": "Grupa różańcowa oferuje wsparcie duchowe od innych członków, wzmacniając Twoją wiarę i poczucie wspólnoty."
+            },
+            {
+                "icon": "fas fa-cross",
+                "title": "Tradycja katolicka",
+                "description": "Dołączając do grupy różańcowej, możesz aktywnie uczestniczyć w modlitwie różańcowej, pogłębiając swoją wiarę katolicką."
+            },
+            {
+                "icon": "fas fa-praying-hands",
+                "title": "Modlitwa w intencji innych",
+                "description": "Dołączając do grupy różańcowej, możesz modlić się za potrzeby Kościoła, za pokój na świecie i za inne intencje, czyniąc dobro dla siebie i innych."
+            }
+        ]
+    },
+    "textWithSidebar": {
+        "title": "Jak to działa?",
+        "mainContent": [
+            "Mężowie z grupy codziennie modlą się za swoje żony oraz za żony pozostałych mężów z grupy różańcowej. Modlitwa trwa około 5 minut dziennie i nie wymaga znacznego wysiłku. Każdego dnia 20 mężów modli się za każdą z żon, wypraszając łaski i opiekę Matki Najświętszej. Za każdą żonę odmawiany jest różaniec we wszystkich intencjach.",
+            "Modlitwa opiera się na zasadzie grupy różańcowej, gdzie każda osoba odmawia dziesiątkę różańca o dowolnej porze i w dowolnym miejscu."
+        ],
+        "sidebarItems": [
+            {
+                "icon": "fa fa-clock-o",
+                "text": "5 minut dziennie"
+            },
+            {
+                "icon": "fa fa-users",
+                "text": "grupa 20 mężów"
+            },
+            {
+                "icon": "fa fa-cross",
+                "text": "dziesiątka różańca"
+            }
+        ]
+    },
+    "cards": [
+        {
+            "title": "Różaniec za żonę",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
+            "imgSrc": "/group-wife.png",
+            "buttonText": "Sprawdź sekcję",
+            "alt": "Praying man",
+            "color": "#F48B2A"
+        },
+        {
+            "title": "Różaniec za męża",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
+            "imgSrc": "/group-husband.png",
+            "buttonText": "Sprawdź sekcję",
+            "alt": "Praying women",
+            "color": "#C642DB"
+        },
+        {
+            "title": "Różaniec za dzieci",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
+            "imgSrc": "/group-kids.png",
+            "buttonText": "Sprawdź sekcję",
+            "alt": "Praying kids",
+            "color": "#70CA61"
+        },
+        {
+            "title": "Różaniec za kapłana",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fermentum leo non sapien ullamcorper vulputate. In ullamcorper dui felis.",
+            "imgSrc": "/group-priest.png",
+            "buttonText": "Sprawdź sekcję",
+            "alt": "Praying priest",
+            "color": "#832AF4"
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Jan Kowalski",
+            "role": "Frontend developer",
+            "testimonial": "Bardzo rekomenduję tę grupę. Codzienne aktywności, wiele treści, jest wybitna!",
+            "imgSrc": "/testi1.png"
+        },
+        {
+            "name": "Bob Kowalski",
+            "role": "Prawnik",
+            "testimonial": "Wiele wyniosłem po modlitwach tutaj, mam nadzieję, że portal się rozrośnie i również poszerzy działalność na inne grupy. Polecam!",
+            "imgSrc": "/testi2.png"
+        },
+        {
+            "name": "Weronika Kowalska",
+            "role": "Sprzedawczyni",
+            "testimonial": "Bardzo pomogło. Ta grupa jest wybitna! Codzienne aktywności, wiele treści i inne.",
+            "imgSrc": "/testi3.png"
+        },
+        {
+            "name": "Andrei Kowalski",
+            "role": "Tłumacz",
+            "testimonial": "Super grupa. Mam nadzieję, że portal się rozrośnie i również poszerzy działalność na inne grupy. Polecam!",
+            "imgSrc": "/testi4.png"
+        }
+    ],
+    "faq": [
+        {
+            "question": "Czy można modlić się za cudzą żonę?",
+            "answer": "Modlitwa za cudzą osobę, w tym za cudzą żonę, może być podejmowana z intencją dobra i wsparcia dla niej oraz jej rodziny. Jednakże, zawsze należy szanować granice i prywatność innych osób. Jeśli modlitwa za cudzą żonę jest podejmowana z dobrymi intencjami, na przykład aby prosić o zdrowie, szczęście, lub inne dobrodziejstwa dla niej i jej rodziny, to zazwyczaj nie ma niczego niewłaściwego w takim działaniu."
+        },
+        {
+            "question": "Co się stanie jak zapomnę się pomodlić?",
+            "answer": "Jeśli zapomnisz się pomodlić, nic złego się nie stanie. Ważne jest, aby starać się modlić regularnie, ale jednorazowe zapomnienie nie powinno być powodem do zmartwień. Możesz kontynuować modlitwę następnego dnia."
+        },
+        {
+            "question": "Czy można się spotkać z innymi uczestnikami grupy na żywo?",
+            "answer": "Tak, wiele grup organizuje spotkania na żywo, aby wspólnie się modlić i dzielić doświadczeniami. Możesz skontaktować się z liderem grupy, aby dowiedzieć się więcej o planowanych spotkaniach."
+        },
+        {
+            "question": "Co się stanie jak nie będę potwierdzał uczestnictwa?",
+            "answer": "Regularne potwierdzanie uczestnictwa jest ważne, aby grupa mogła śledzić postępy i zaangażowanie swoich członków. Jeśli nie będziesz potwierdzał uczestnictwa, lider grupy może się z Tobą skontaktować, aby dowiedzieć się, czy wszystko jest w porządku i czy nadal chcesz być częścią grupy."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "confirmation": {
+        "title": "Potwierdzenie",
+        "content": {
+            "icon": "faCircleCheck",
+            "text": {
+                "title": "Dziękujemy za potwierdzenie uczestnictwa!",
+                "description": "Pomaga nam to utrzymać aktywność wśród członków, następne powiadomienie otrzymasz za 60 dni."
+            },
+            "button": {
+                "text": "Wróć na portal",
+                "link": "/"
+            }
+        }
+    }
+}

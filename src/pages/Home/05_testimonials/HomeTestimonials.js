@@ -1,38 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./HomeTestimonials.module.css";
 
-const testimonialsData = [
-  {
-    name: "Jan Kowalski",
-    role: "Frontend developer",
-    testimonial:
-      "Bardzo rekomenduję tę grupę. Codzienne aktywności, wiele treści, jest wybitna!",
-    imgSrc: "/testi1.png",
-  },
-  {
-    name: "Bob Kowalski",
-    role: "Prawnik",
-    testimonial:
-      "Wiele wyniosłem po modlitwach tutaj, mam nadzieję, że portal się rozrośnie i również poszerzy działalność na inne grupy. Polecam!",
-    imgSrc: "/testi2.png",
-  },
-  {
-    name: "Weronika Kowalska",
-    role: "Sprzedawczyni",
-    testimonial:
-      "Bardzo pomogło. Ta grupa jest wybitna! Codzienne aktywności, wiele treści i inne.",
-    imgSrc: "/testi3.png",
-  },
-  {
-    name: "Andrei Kowalski",
-    role: "Tłumacz",
-    testimonial:
-      "Super grupa. Mam nadzieję, że portal się rozrośnie i również poszerzy działalność na inne grupy. Polecam!",
-    imgSrc: "/testi4.png",
-  },
-];
-
 const HomeTestimonials = () => {
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/home.json")
+      .then((response) => response.json())
+      .then((data) => setContent(data.testimonials))
+      .catch((error) => console.error("Error loading content:", error));
+  }, []);
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <section className={styles.testimonialsSection}>
       <div className="container">
@@ -42,7 +24,7 @@ const HomeTestimonials = () => {
             Zobacz świadectwa innych uczestników
           </h2>
           <div className={styles.grid}>
-            {testimonialsData.map((testimonial, index) => (
+            {content.map((testimonial, index) => (
               <div key={index} className={styles.card}>
                 <div className={styles.cardAuthor}>
                   <img

@@ -1,0 +1,61 @@
+{
+    "about": {
+        "title": "O nas",
+        "description": "Jesteśmy grupą osób, która regularnie modli się w różnych intencjach."
+    },
+    "contributions": {
+        "title": "Składki",
+        "accountNumber": "32 3144 2322 0000 0000 0000 0341"
+    },
+    "social": [
+        {
+            "iconClass": "fab fa-facebook-f",
+            "link": "#"
+        },
+        {
+            "iconClass": "fab fa-instagram",
+            "link": "#"
+        }
+    ],
+    "contact": {
+        "title": "Kontakt",
+        "email": "kolo@rozancowe.pl"
+    },
+    "partners": {
+        "title": "Partnerzy",
+        "logos": [
+            {
+                "src": "/partnierzy-rozaniec.png",
+                "alt": "Partner 2"
+            },
+            {
+                "src": "/partnierzy-zywy-rozaniec.png",
+                "alt": "Partner 3"
+            },
+            {
+                "src": "/partnierzy-dla-dzieci.png",
+                "alt": "Partner 1"
+            }
+        ]
+    },
+    "languageSwitcher": {
+        "currentLanguage": {
+            "label": "Polski",
+            "flagSrc": "/flag-polish.png"
+        },
+        "languages": [
+            {
+                "label": "English",
+                "flagSrc": "/flag-english.png"
+            },
+            {
+                "label": "Deutsch",
+                "flagSrc": "/flag-german.png"
+            }
+        ]
+    },
+    "footerBottom": {
+        "privacyPolicyLink": "#",
+        "copyrightText": "© 2024 Copyright."
+    }
+}

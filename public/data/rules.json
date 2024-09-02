@@ -1,0 +1,105 @@
+{
+    "textWithSidebar": {
+        "heading": "Zasady",
+        "subheading": "Ogólne",
+        "paragraphs": [
+            "Modlitwa działa na zasadzie grupy różańcowej. Modlitwą są objęte wszystkie żony z grupy do której mężowie należą. Za każdą z nich codziennie jest odmawiany cały różaniec. Każda tajemnica różańca to inna intencja, także w ciągu jednego dnia za każdą żonę jest zmawiana modlitwa we wszystkich intencjach. Modlitwa nie wymaga znacznego wysiłku. Jest to ok 5 minut dziennie o wybranej porze i w dowolnym miejscu.",
+            "Zachęcamy by poinformować żonę o intencji w której uczestnik się modli. W czasie gdy jest dobrze wzmacnia to miłość małżonków, a w czasie gdy jest gorzej pomaga to tę miłość utrzymać."
+        ],
+        "sidebarTitle": "W pigułce",
+        "sidebarItems": [
+            {
+                "icon": "fas fa-clock",
+                "text": "5 minut dziennie"
+            },
+            {
+                "icon": "fas fa-cog",
+                "text": "wybrana pora"
+            },
+            {
+                "icon": "fas fa-map-marker-alt",
+                "text": "dowolne miejsce"
+            }
+        ]
+    },
+    "accordion": {
+        "heading": "Grupa różańcowa",
+        "introParagraph": "Grupa różańcowa działa następująco. Jedna grupa różańcowa składa się z dwudziestu uczestników. Tyle ile jest tajemnic różańca. Uczestnicy nie muszą się znać. Każdy uczestnik codziennie rozważa jedną tajemnicę różańca o wybranej porze i w dowolnym miejscu. Każda tajemnica odpowiada konkretnej intencji. Rozważanie tajemnicy to modlitwa dziesiątkiem różańca.",
+        "introParagraph2": "Każdy uczestnik zaczyna rozważania słowami wstępnymi:",
+        "introParagraph3": "Tą dziesiątkę różańca zmawiam za moją żonę i za inne żony objęte modlitwą w naszej grupie różańcowej w następującej intencji [treść intencji].",
+        "heading4_1": "Ten uczestnik, który jest przypisany do pierwszej tajemnicy zmawia dodatkowo wstęp modlitwy różańcowej",
+        "sections": [
+            {
+                "title": "Wierzę w Boga",
+                "content": [
+                    "Wierzę w Boga, Ojca wszechmogącego, Stworzyciela nieba i ziemi.",
+                    "I w Jezusa Chrystusa, Syna Jego jedynego, Pana naszego,",
+                    "który się począł z Ducha Świętego,",
+                    "narodził się z Maryi Panny,",
+                    "umęczon pod Ponckim Piłatem, ukrzyżowan, umarł i pogrzebion.",
+                    "Zstąpił do piekieł, trzeciego dnia zmartwychwstał.",
+                    "Wstąpił na niebiosa, siedzi po prawicy Boga Ojca wszechmogącego.",
+                    "Stamtąd przyjdzie sądzić żywych i umarłych.",
+                    "Wierzę w Ducha Świętego,",
+                    "święty Kościół powszechny, świętych obcowanie,",
+                    "grzechów odpuszczenie,",
+                    "ciała zmartwychwstanie,",
+                    "żywot wieczny.",
+                    "Amen."
+                ]
+            },
+            {
+                "title": "Ojcze nasz",
+                "content": [
+                    "Ojcze nasz, któryś jest w niebie: święć się imię Twoje, przyjdź Królestwo Twoje, bądź wola Twoja jako w niebie, tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj. I odpuść nam nasze winy, jako i my odpuszczamy naszym winowajcom. I nie wódź nas na pokuszenie, ale nas zbaw od złego. Amen."
+                ]
+            },
+            {
+                "title": "Zdrowaś Maryjo x3",
+                "content": [
+                    "Zdrowaś Maryjo, łaski pełna, Pan z Tobą. Błogosławionaś Ty między niewiastami i błogosławiony owoc żywota Twojego, Jezus. Święta Maryjo, Matko Boża, módl się za nami grzesznymi, teraz i w godzinę śmierci naszej. Amen."
+                ]
+            },
+            {
+                "title": "Chwała Ojcu",
+                "content": [
+                    "Chwała Ojcu i Synowi i Duchowi Świętemu, jak była na początku, teraz i zawsze i na wieki wieków. Amen."
+                ]
+            },
+            {
+                "title": "Akt Zawierzenia",
+                "content": [
+                    "Niepokalana Dziewico Maryjo! Królowo Rodzin, Królowo Pokoju! Zawierzam Ci swoją Żonę i wszystkie Żony objęte modlitwą w naszej Róży Różańcowej. Przez tajemnice życia Jezusa i Świętej Rodziny uproś u Boga łaskę ochrony tych Żon przed wszelkim złem, zwłaszcza tym jakie może wypływać ze słabości i grzechów mężów. Ochroń je płaszczem swojej miłości i modlitwy, niech pozostaną niewinne, a te które zbłądziły, które doświadczają nędzy grzechu skieruj na drogę nawrócenia. Tobie i tej modlitwie różańcowej powierzamy drogi ich rozwoju i ufamy że doprowadzisz je do Jezusa. Niech to dzieło modlitwy rozwija się przynosząc Miłość i Pokój jaki niesie światu Chrystus, aby jak najwięcej Żon, rodzin doświadczyło uzdrawiającej mocy Miłości Bożej. Tobie się powierzamy w całości."
+                ]
+            }
+        ],
+        "finalParagraph": "Co roku 8 grudnia staramy się być w kościele i ponowić nasz Akt Zawierzenia w łączności duchowej ze wszystkimi uczestnikami grupy różańcowej."
+    },
+    "instructions": {
+        "heading": "Rejestracja",
+        "paragraphs": [
+            "Uczestnictwo w modlitwie jest dobrowolne i na czas nieokreślony. Może się zdarzyć, że ktoś odejdzie z róży. Dlatego, w celu zapewnienia należytej staranności modlitwy, uczestnictwo wymaga rejestracji. Podczas rejestracji konieczne jest podanie adresu e-mail i stworzenie hasła do logowania.",
+            "Adres, który służy jako identyfikator do logowania. Jest to główny kanał komunikacji między administratorem a uczestnikiem. Na ten adres będą wysyłane następujące treści:"
+        ],
+        "listItems": [
+            "Kod aktywacyjny podczas rejestracji.",
+            "Przypomnienia o potwierdzeniu uczestnictwa.",
+            "Widomości, konieczne do rozwiązywania problemów z kontem."
+        ],
+        "subheadings": {
+            "email": "Adres email",
+            "password": "Hasło"
+        },
+        "passwordParagraph": "Ciąg znaków, który będzie używany w celu logowania do panelu uczestnika. Zapoznaj się z rekomendacjami dotyczącymi tworzenia haseł zawartymi na tej stronie "
+    },
+    "justifications": {
+        "heading": "Uczestnictwo",
+        "paragraphs": [
+            "W celu uczestnictwa w modlitwie, niezbędna i konieczna jest rejestracja. Wynikiem rejestracji jest automatyczne utworzenie profilu oraz wpisanie uczestnika na listę osób oczekujących do utworzenia nowej grupy różańcowej. Bez rejestracji pozostaje tylko osobista modlitwa w podanych intencjach.",
+            "<strong>Po zebraniu dwudziestu osób zakładana jest nowa aktywna grupa różańcowa. Każdy jej uczestnik zostanie o tym fakcie poinformowany. Od tego momentu zaczyna się okres codziennej aktywnej modlitwy.</strong>",
+            "By modlitwa była zawsze pełna i nieprzerwana, wymagane jest cykliczne potwierdzanie uczestnictwa. Potwierdzenie uczestnictwa wymagane jest co miesiąc w panelu grupy różańcowej. Członków grup różańcowych, którzy nie potwierdzą odpowiednio szybko swojego uczestnictwa będziemy osobiście prosić o reakcję. W tym celu zostanie wysłane przypomnienie na adres e-mail.",
+            "Brak potwierdzenia i reakcji na przypomnienia wiąże się z usunięciem uczestnika z grupy do której należy. Miejsce usuniętego uczestnika zajmie nowy uczestnik z listy oczekujących. Dla usuniętego uczestnika zostaje wtedy tylko możliwość ponownej rejestracji. O wszystkich krokach uczestnik zostanie poinformowany zawczasu.",
+            "Każdemu przysługuje prawo do odstąpienia od uczestnictwa. W tym celu prosimy o kontakt z nami."
+        ]
+    }
+}

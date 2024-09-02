@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Menu.module.css";
 
 const Menu = () => {
+  const [menuData, setMenuData] = useState(null);
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
   const isRulesPage = location.pathname === "/rules";
+
+  useEffect(() => {
+    // Fetch the menu data from the JSON file
+    fetch("/data/menu.json")
+      .then((response) => response.json())
+      .then((data) => setMenuData(data))
+      .catch((error) => console.error("Error fetching the menu data:", error));
+  }, []);
+
+  if (!menuData) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <nav
@@ -17,46 +29,44 @@ const Menu = () => {
         <div className={styles.logoMenuWrapper}>
           <a href="/">
             <img
-              src={`${process.env.PUBLIC_URL}/logo.png`}
-              alt="Logo"
+              src={`${process.env.PUBLIC_URL}${menuData.menu.logo.src}`}
+              alt={menuData.menu.logo.alt}
               className={styles.logo}
             />
           </a>
           <ul className={styles.navLinks}>
-            <li>
-              <Link to="/">Strona główna</Link>
-            </li>
-            <li>
-              <Link to="/rules">Zasady</Link>
-            </li>
-            <li className={styles.dropdown}>
-              <Link to="/groups" className={styles.dropdownLink}>
-                Grupy{" "}
-                <i
-                  className={`${styles.dropdownLinkIcon} fas fa-chevron-down`}
-                ></i>
-              </Link>
-              <ul className={styles.dropdownContent}>
-                <li>
-                  <Link to="/groups/husbands">Za cos1</Link>
-                </li>
-                <li>
-                  <Link to="/groups/children">Za cos2</Link>
-                </li>
-                <li>
-                  <Link to="/groups/priests">Za cos3</Link>
-                </li>
-              </ul>
-            </li>
+            {menuData.menu.navLinks.map((link, index) => (
+              <li key={index} className={link.dropdown ? styles.dropdown : ""}>
+                <Link
+                  to={link.link}
+                  className={link.dropdown ? styles.dropdownLink : ""}
+                >
+                  {link.label}
+                  {link.dropdown && (
+                    <i
+                      className={`${styles.dropdownLinkIcon} fas fa-chevron-down`}
+                    ></i>
+                  )}
+                </Link>
+                {link.dropdown && (
+                  <ul className={styles.dropdownContent}>
+                    {link.dropdown.map((dropdownLink, dropdownIndex) => (
+                      <li key={dropdownIndex}>
+                        <Link to={dropdownLink.link}>{dropdownLink.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
         <div className={styles.authButtons}>
-          <Link to="/register" className={styles.joinButton}>
-            Przyłącz się
-          </Link>
-          <Link to="/login" className={styles.loginLink}>
-            Zaloguj się
-          </Link>
+          {menuData.menu.authButtons.map((button, index) => (
+            <Link key={index} to={button.link} className={styles[button.class]}>
+              {button.label}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../../../components/Hero";
 
 const HomeHero = () => {
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    fetch("/data/home.json")
+      .then((response) => response.json())
+      .then((data) => setContent(data.hero))
+      .catch((error) => console.error("Error loading content:", error));
+  }, []);
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <Hero
-      title="Grupa różańcowa"
-      subtitle={[
-        "Dołącz do modlitwy różańcowej.",
-        "Poznaj szczegóły i przyłącz się do grupy.",
-      ]}
-      primaryButtonText="Przyłącz się"
-      primaryButtonLink="#"
-      secondaryButtonText="Dowiedz się więcej"
-      secondaryButtonLink="#"
+      title={content.title}
+      subtitle={content.subtitle}
+      primaryButtonText={content.primaryButtonText}
+      primaryButtonLink={content.primaryButtonLink}
+      secondaryButtonText={content.secondaryButtonText}
+      secondaryButtonLink={content.secondaryButtonLink}
     />
   );
 };
